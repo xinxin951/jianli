@@ -1,0 +1,268 @@
+/* 
+* 辛怡洁 - 个人简历网站
+* 文件: responsive.css
+* 描述: 定义网站在不同设备上的显示效果
+*/
+
+/* ===== 大型设备 (1200px以上) ===== */
+@media screen and (min-width: 1200px) {
+  .section-container {
+    padding: 0 20px;
+  }
+}
+
+/* ===== 中型设备 (992px-1199px) ===== */
+@media screen and (max-width: 1199px) {
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+  
+  .education-content, 
+  .about-content {
+    gap: 30px;
+  }
+  
+  .poster-carousel-track {
+    height: 500px;
+  }
+}
+
+/* ===== 小型设备 (768px-991px) ===== */
+@media screen and (max-width: 991px) {
+  .section {
+    padding: 60px 0;
+  }
+  
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  
+  .hero-text, 
+  .hero-image {
+    width: 100%;
+    padding-right: 0;
+  }
+  
+  .hero-image {
+    margin-bottom: 40px;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+  
+  .about-content, 
+  .education-content,
+  .skills-content,
+  .contact-content {
+    flex-direction: column;
+  }
+  
+  .photo-carousel {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  
+  .education-images {
+    margin-top: 40px;
+  }
+  
+  .education-gallery {
+    justify-content: center;
+  }
+  
+  .poster-carousel-track {
+    height: 450px;
+  }
+  
+  .contact-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .contact-form {
+    margin-top: 30px;
+  }
+}
+
+/* ===== 平板设备 (576px-767px) ===== */
+@media screen and (max-width: 767px) {
+  .nav-toggle {
+    display: flex;
+    z-index: 100;
+  }
+  
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: rgb(255, 254, 174);
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    z-index: 99;
+  }
+  
+  .nav-links.active {
+    right: 0;
+  }
+  
+  .nav-link {
+    margin: 15px 0;
+    font-size: 1.2rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  
+  .typed-text {
+    font-size: 1.3rem;
+  }
+  
+  .avatar-container {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .timeline-content {
+    padding: 20px;
+  }
+  
+  .timeline-title {
+    font-size: 1.3rem;
+  }
+  
+  .certificate-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+  
+  .poster-carousel-track {
+    height: 400px;
+  }
+  
+  .poster-info {
+    padding: 15px;
+  }
+  
+  .poster-title {
+    font-size: 1.3rem;
+  }
+  
+  .poster-description {
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== 手机设备 (575px以下) ===== */
+@media screen and (max-width: 575px) {
+  .section {
+    padding: 50px 0;
+  }
+  
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  
+  .typed-text {
+    font-size: 1.1rem;
+    min-height: 50px;
+  }
+  
+  .avatar-container {
+    width: 200px;
+    height: 200px;
+    border-width: 6px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
+  }
+  
+  .section-header {
+    margin-bottom: 30px;
+  }
+  
+  .about-info {
+    flex-direction: column;
+  }
+  
+  .info-item {
+    margin-bottom: 8px;
+  }
+  
+  .carousel-slide img {
+    height: 300px;
+  }
+  
+  .poster-carousel-track {
+    height: 350px;
+  }
+  
+  .poster-info {
+    padding: 12px;
+  }
+  
+  .poster-title {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+  
+  .poster-description {
+    font-size: 0.8rem;
+  }
+  
+  .gallery-filters {
+    margin-bottom: 20px;
+  }
+  
+  .gallery-filter {
+    padding: 6px 15px;
+    font-size: 0.85rem;
+  }
+  
+  .gallery-item {
+    height: 200px;
+  }
+  
+  .gallery-info h3 {
+    font-size: 1.1rem;
+  }
+  
+  .gallery-info p {
+    font-size: 0.85rem;
+  }
+  
+  .contact-form {
+    padding: 20px;
+  }
+  
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    bottom: 15px;
+    right: 15px;
+  }
+}

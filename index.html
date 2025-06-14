@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>辛怡洁 - 个人简历</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- 引入字体图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- 预加载背景图片 -->
+    <link rel="preload" href="images\图片1.png" as="images">
+</head>
+<body>
+    <!-- 加载动画 -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <h2>欢迎访问我的简历</h2>
+        </div>
+    </div>
+
+    <!-- 背景效果 -->
+    <div class="background-overlay"></div>
+    
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>辛怡洁</h1>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#about" class="nav-link">关于我</a></li>
+                <li><a href="#education" class="nav-link">教育背景</a></li>
+                <li><a href="#skills" class="nav-link">专业技能</a></li>
+                <li><a href="#experience" class="nav-link">校内经历</a></li>
+                <li><a href="#posters" class="nav-link">活动海报</a></li>
+                <li><a href="#certificates" class="nav-link">荣誉证书</a></li>
+                <li><a href="#gallery" class="nav-link">个人展示</a></li>
+                <li><a href="#contact" class="nav-link">联系方式</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首页部分 -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text animate-fade-in">
+                <h1 class="glitch-text" data-text="辛怡洁">辛怡洁</h1>
+                <p class="typed-text"></p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">了解我</a>
+                    <a href="#contact" class="btn btn-outline">联系我</a>
+                </div>
+            </div>
+            <div class="hero-image animate-slide-in">
+                <div class="avatar-container">
+                    <img src="images\personal\fuyanjing.jpg" alt="个人头像" class="avatar">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <span>向下滚动</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- 关于我部分 -->
+    <section id="about" class="section about-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">关于我</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-label">姓名：</span>
+                            <span class="info-value">辛怡洁</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">年龄：</span>
+                            <span class="info-value">20岁</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">性别：</span>
+                            <span class="info-value">女</span>
+                        </div>
+                    </div>
+                    <p class="about-description">
+                        我是辛怡洁，三亚学院区块链工程专业在读学生。具有行政及人事管理经验，擅长办公辅助和组织协调工作。拥有良好的公共关系意识和协调人际关系能力。学习能力强，能接受建议并不断优化工作内容。希望能够在事业单位中发挥专业技能和管理能力，为团队贡献力量。
+                    </p>
+                </div>
+                <div class="photo-carousel" id="aboutCarousel">
+                    <div class="carousel-container">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="images\personal\yejing1.jpg" alt="个人照片1">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images\personal\retouch_2025032123371739.jpg" alt="个人照片2">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images\personal\xidao.jpg" alt="个人照片3">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images\personal\huaxuequan.jpg" alt="个人照片4">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images\personal\xianggang.jpg" alt="个人照片5">
+                            </div>
+                        </div>
+                        <button class="carousel-button prev" aria-label="上一张">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-button next" aria-label="下一张">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div class="carousel-indicators">
+                            <button class="indicator active" data-index="0" aria-label="照片1"></button>
+                            <button class="indicator" data-index="1" aria-label="照片2"></button>
+                            <button class="indicator" data-index="2" aria-label="照片3"></button>
+                            <button class="indicator" data-index="3" aria-label="照片4"></button>
+                            <button class="indicator" data-index="4" aria-label="照片5"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 教育背景部分 -->
+    <section id="education" class="section education-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">教育背景</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="education-content">
+                <div class="education-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-point"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">三亚学院</h3>
+                            <p class="timeline-period">2023 - 2027</p>
+                            <p class="timeline-description">
+                                <strong>专业：</strong>区块链工程<br>
+                                <strong>学历：</strong>本科（在读）<br>
+                                <strong>预计毕业时间：</strong>2027年
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-connector"></div>
+                </div>
+                <div class="education-images">
+                    <div class="education-gallery">
+                        <div class="image-card">
+                            <div class="image-card-front">
+                                <img src="image2\gallery\usy.jpg" alt="三亚学院" class="education-img">
+                            </div>
+                            <div class="image-card-back">
+                                <h4>三亚学院</h4>
+                                <p>位于海南省三亚市，是一所以工科为主的综合性大学</p>
+                            </div>
+                        </div>
+                        <div class="image-card">
+                            <div class="image-card-front">
+                                <img src="images\gallery\xiaoyuan.jpg" alt="三亚学院校园" class="education-img">
+                            </div>
+                            <div class="image-card-back">
+                                <h4>校园环境</h4>
+                                <p>环境优美，学习氛围浓厚</p>
+                            </div>
+                        </div>
+                        <div class="image-card">
+                            <div class="image-card-front">
+                                <img src="images\gallery\jiaoxuelou.jpg" alt="三亚学院教学楼" class="education-img">
+                            </div>
+                            <div class="image-card-back">
+                                <h4>教学设施</h4>
+                                <p>现代化教学设施，提供良好的学习环境</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 专业技能部分 -->
+    <section id="skills" class="section skills-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">专业技能</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-group">
+                    <h3 class="skills-group-title">技术能力</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h4 class="skill-name">C语言</h4>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-percent="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h4 class="skill-name">Go语言</h4>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-percent="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h4 class="skill-name">线性代数</h4>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-percent="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h4 class="skill-name">高等数学</h4>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-percent="85"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-group">
+                    <h3 class="skills-group-title">软能力</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h4 class="skill-name">团队协作</h4>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-percent="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h4 class="skill-name">沟通能力</h4>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-percent="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h4 class="skill-name">组织协调</h4>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-percent="92"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h4 class="skill-name">学习能力</h4>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-percent="88"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 校内经历部分 -->
+    <section id="experience" class="section experience-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">校内经历</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="experience-content">
+                <div class="experience-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-point"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">班长</h3>
+                            <p class="timeline-period">2023年9月 - 至今2025年3月</p>
+                            <p class="timeline-description">
+                                负责班级日常管理工作，组织班级活动，传达学校通知。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-connector"></div>
+                    <div class="timeline-item">
+                        <div class="timeline-point"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">学堂宣传部部长</h3>
+                            <p class="timeline-period">2024年9月 - 至今</p>
+                            <p class="timeline-description">
+                                参与策划和组织校园文化活动，负责活动宣传和执行工作、绘制海报等。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-connector"></div>
+                    <div class="timeline-item">
+                        <div class="timeline-point"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">行政助理</h3>
+                            <p class="timeline-period">2025年3月 - 至今</p>
+                            <p class="timeline-description">
+                                协助老师收集材料，整理信息文件，与不同导师对接工作。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 海报展示部分（轮播） -->
+    <section id="posters" class="section posters-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">活动海报</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="posters-content">
+                <div class="poster-carousel" id="posterCarousel">
+                    <div class="poster-carousel-container">
+                        <div class="poster-carousel-track">
+                            <div class="poster-slide active">
+                                <div class="poster-card">
+                                    <div class="poster-image">
+                                        <img src="images\certificates\h1.jpg" alt="活动海报1">
+                                    </div>
+                                    <div class="poster-info">
+                                        <h3 class="poster-title">校园文化节</h3>
+                                        <p class="poster-description">
+                                            我负责策划并参与执行的校园文化活动，展示了丰富多彩的校园文化生活。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="poster-slide">
+                                <div class="poster-card">
+                                    <div class="poster-image">
+                                        <img src="images\certificates\h4.jpg" alt="活动海报2">
+                                    </div>
+                                    <div class="poster-info">
+                                        <h3 class="poster-title">学术交流会</h3>
+                                        <p class="poster-description">
+                                            作为部长协助组织的学术交流活动，促进了同学们的学术讨论与知识分享。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="poster-slide actives">
+                                <div class="poster-card">
+                                    <div class="poster-image">
+                                        <img src="images\certificates\h2.jpg" alt="活动海报3">
+                                    </div>
+                                    <div class="poster-info">
+                                        <h3 class="poster-title">挑战杯院赛</h3>
+                                        <p class="poster-description">
+                                            负责宣传和讲解院赛的各个赛道组成，协助同学参加比赛。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="poster-carousel-button prev" aria-label="上一张海报">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="poster-carousel-button next" aria-label="下一张海报">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div class="poster-carousel-indicators">
+                            <button class="poster-indicator active" data-index="0" aria-label="海报1"></button>
+                            <button class="poster-indicator" data-index="1" aria-label="海报2"></button>
+                            <button class="poster-indicator actives" data-index="1" aria-label="海报3"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 荣誉证书部分 -->
+    <section id="certificates" class="section certificates-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">荣誉证书</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="certificates-content">
+                <div class="certificate-grid">
+                    <div class="certificate-card">
+                        <div class="certificate-image">
+                            <img src="images\certificates\j1.jpg" alt="证书1">
+                        </div>
+                        <div class="certificate-info">
+                            <h3 class="certificate-title">优秀班干部</h3>
+                            <p class="certificate-date">2024年12月</p>
+                        </div>
+                    </div>
+                    <div class="certificate-card">
+                        <div class="certificate-image">
+                            <img src="images\certificates\j2.jpg" alt="证书2">
+                        </div>
+                        <div class="certificate-info">
+                            <h3 class="certificate-title">优秀学习二等奖</h3>
+                            <p class="certificate-date">2024年12月</p>
+                        </div>
+                    </div>
+                    <div class="certificate-card">
+                        <div class="certificate-image">
+                            <img src="images\certificates\by.jpg" alt="证书3">
+                        </div>
+                        <div class="certificate-info">
+                            <h3 class="certificate-title">最佳表演奖</h3>
+                            <p class="certificate-date">2023年12月</p>
+                        </div>
+                    </div>
+                    <div class="certificate-card">
+                        <div class="certificate-image">
+                            <img src="images\certificates\xueyuan.jpg" alt="证书4">
+                        </div>
+                        <div class="certificate-info">
+                            <h3 class="certificate-title">优秀学员</h3>
+                            <p class="certificate-date">2023年12月</p>
+                        </div>
+                    </div>
+                    <div class="certificate-card">
+                        <div class="certificate-image">
+                            <img src="images\certificates\54.jpg" alt="证书5">
+                        </div>
+                        <div class="certificate-info">
+                            <h3 class="certificate-title">优秀学生干部</h3>
+                            <p class="certificate-date">2024年6月</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 个人展示部分 -->
+    <section id="gallery" class="section gallery-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">个人展示</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="gallery-content">
+                <div class="gallery-filters">
+                    <button class="gallery-filter active" data-filter="all">全部</button>
+                    <button class="gallery-filter" data-filter="campus">校园</button>
+                    <button class="gallery-filter" data-filter="city">城市</button>
+                    <button class="gallery-filter" data-filter="travel">热爱</button>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item campus">
+                        <div class="gallery-image">
+                            <img src="images\gallery\cs2.png" alt="校园1">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>校园生活</h3>
+                                    <p>三亚学院校园一角</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item campus">
+                        <div class="gallery-image">
+                            <img src="images\gallery\小青.jpg" alt="校园2">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>独特风景</h3>
+                                    <p>三亚学院小青</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item campus">
+                        <div class="gallery-image">
+                            <img src="images\gallery\电动车.jpg" alt="校园3">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>校园生活</h3>
+                                    <p>兼职写真</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item city">
+                        <div class="gallery-image">
+                            <img src="images\gallery\fj2.jpg" alt="城市1">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>城市风光</h3>
+                                    <p>街拍</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item city">
+                        <div class="gallery-image">
+                            <img src="images\gallery\fj1.jpg" alt="城市2">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>城市夜景</h3>
+                                    <p>灯火辉煌的城市夜晚</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item city">
+                        <div class="gallery-image">
+                            <img src="images\gallery\fj3.jpg" alt="城市3">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>自然景光</h3>
+                                    <p>街边小可爱</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item travel">
+                        <div class="gallery-image">
+                            <img src="images\gallery\cs3.jpg" alt="爱好1">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>马术记忆</h3>
+                                    <p>热爱现场</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item travel">
+                        <div class="gallery-image">
+                            <img src="images\personal\huaxue2.jpg" alt="爱好2">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>滑雪风光</h3>
+                                    <p>难忘时刻</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式部分 -->
+    <section id="contact" class="section contact-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">联系方式</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h3>邮箱</h3>
+                            <p>2629856878@QQ.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h3>电话</h3>
+                            <p>13864443933</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h3>地址</h3>
+                            <p>海南省三亚市吉阳区学院路</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-weixin"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h3>微信</h3>
+                            <p>Xinyijie_2004</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>给我留言</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">姓名</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">邮箱</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">留言内容</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">发送留言</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚部分 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2024-2025 辛怡洁个人简历. 保留所有肖像权利.</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-link"><i class="fab fa-weibo"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button class="back-to-top" id="backToTop" aria-label="返回顶部">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript 文件 -->
+    <script src="js/main.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/poster-carousel.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+</html>
